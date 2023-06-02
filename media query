@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>madia query</title>
+    <link rel="stylesheet"  href="learning.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="name">media query</div>
+    <div class="main">
+      <div class="text"><P>Lorem Ipsum is simply dummy text of
+         the printing and typesetting industry.
+         Lorem Ipsum has been the industry's standard dummy text ev
+        er since the 1500s, when an unknown printer took a galley of 
+        type and scrambled it to make a 
+        type specimen book. It has survived not only five centuries, but
+         also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised
+         in the 
+        1960s with the release of
+         Letraset sheets containing Lorem Ipsum passages, and more
+          recently with desktop publishing 
+         software like Aldus PageMaker including versions of Lorem Ipsum.</P></div>
+    </div>
+    <div class="image" >
+      <image src="cloud3.jpeg" width="500px height:500px"></image>
+    </div>
+  </body>
+</html>
+css-
+.name{
+    width:2000px ;
+    height: 50px;
+    color:red;
+    text-align: auto;
+    font-size:50px;
+}
+.main{
+    width: 2000px;
+    height:500px;
+    position:relative;
+    
+}
+.text{
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    padding:10px;
+    text-align: justify;
+}
+.image {
+    width :500px;
+    height: 500px;
+    position:absolute;
+    top:50px;
+    right: 100px;
+    
+}
+@media(max-width:900px){
+    .name{
+        color:blue;
+    }
+    .image{
+        position:absolute;
+        top:550px;
+        left:0px;
+    }
+    .text{
+        font-size:20px;
+        height:auto;
+    }
+    .image image{
+        width:100%;
+        height:auto;
+    }
+}
+
+
